@@ -1,6 +1,6 @@
 name: app
 
-type: php:7.3.21
+type: php:7.4
 
 runtime:
     extensions:
@@ -41,12 +41,3 @@ hooks:
         set -x -e
 
         (>&2 symfony-deploy)
-
-variables:
-    php-ext:
-        pdo_pgsql:7.3.21
-        apcu:7.3.21
-        mbstring:7.3.21
-        sodium:7.3.21
-        ctype:7.3.21
-        iconv:7.3.21
