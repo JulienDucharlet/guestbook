@@ -1,18 +1,21 @@
 name: app
 
-type: php:7.4
+type: php:7.3.21
 
 runtime:
     extensions:
+        - pdo_pgsql
         - apcu
         - mbstring
         - sodium
         - ctype
         - iconv
-        
 
 build:
     flavor: none
+
+relationships:
+    database: "db:postgresql"
 
 web:
     locations:
