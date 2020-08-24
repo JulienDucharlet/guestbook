@@ -41,3 +41,12 @@ hooks:
         set -x -e
 
         (>&2 symfony-deploy)
+
+variables:
+    php-ext:
+        pdo_pgsql:version
+        apcu:version
+        mbstring:version
+        sodium:version
+        ctype:version
+        iconv:version
